@@ -1,0 +1,6 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="18" height="18" viewBox="0 0 18 18">
+  <g id="Group_40975" data-name="Group 40975" transform="translate(0 0.219)">
+    <rect id="Rectangle_6796" data-name="Rectangle 6796" width="18" height="18" rx="9" transform="translate(0 -0.219)" fill="#dc1313"/>
+    <path id="close" d="M124.332,123.458l2.444-2.444a.618.618,0,1,0-.873-.875l-2.444,2.444-2.444-2.444a.619.619,0,1,0-.875.875l2.444,2.444L120.14,125.9a.619.619,0,1,0,.875.875l2.444-2.444,2.444,2.444a.619.619,0,1,0,.875-.875Z" transform="translate(-114.458 -114.677)" fill="#fff"/>
+  </g>
+</svg>
