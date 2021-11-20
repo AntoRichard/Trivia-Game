@@ -1,0 +1,15 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="64.09" height="58.884" viewBox="0 0 64.09 58.884">
+  <g id="perspective-stacked-rectangles" transform="translate(1.5 1.5)">
+    <g id="Group_48505" data-name="Group 48505" transform="translate(0 0)">
+      <g id="Group_48502" data-name="Group 48502" transform="translate(0 0)">
+        <path id="Path_66525" data-name="Path 66525" d="M53.814,72.246H7.276A7.284,7.284,0,0,0,0,79.522v30.539a7.284,7.284,0,0,0,7.276,7.276H53.814a7.285,7.285,0,0,0,7.276-7.276V79.522A7.285,7.285,0,0,0,53.814,72.246Z" transform="translate(0 -72.246)" fill="#eeebfa" stroke="#5839cb" stroke-width="3"/>
+      </g>
+      <g id="Group_48503" data-name="Group 48503" transform="translate(6.682 49.182)" opacity="0.5">
+        <path id="Path_66526" data-name="Path 66526" d="M84.3,42.529H38.753a1.091,1.091,0,0,0,0,2.182H84.3a1.091,1.091,0,0,0,0-2.182Z" transform="translate(-37.662 -42.529)" fill="#5839cb" stroke="#5839cb" stroke-width="1.5"/>
+      </g>
+      <g id="Group_48504" data-name="Group 48504" transform="translate(10.909 54.453)" opacity="0.2">
+        <path id="Path_66527" data-name="Path 66527" d="M99.67,17.934H62.58a1.091,1.091,0,1,0,0,2.182H99.67a1.091,1.091,0,0,0,0-2.182Z" transform="translate(-61.489 -17.934)" fill="#5839cb" stroke="#5839cb" stroke-width="1.5"/>
+      </g>
+    </g>
+  </g>
+</svg>

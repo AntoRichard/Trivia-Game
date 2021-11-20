@@ -1,5 +1,49 @@
-// @import "src/styles/variables";
+@import "src/styles/variables";
 
 .home {
+  background-color: $bg-color;
+  height: 100vh;
+  width: 100vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  .content {
+    padding: 2rem;
+    background-color: white;
+    box-shadow: 0px -10px 20px #6666661a;
+    border-radius: 10px;
+    text-align: center;
+    h4,
+    p {
+      margin: 0px;
+      margin-top: 8px;
+    }
+    h4 {
+    }
 
+    p {
+      color: $text-color;
+      font-size: 12px;
+    }
+  }
+
+  .get-started {
+    width: 80%;
+    display: block;
+    margin-top: 22px;
+    transition: display 0.5s, margin-left 0.5s, color 0.5s;
+
+    img {
+      margin-left: -8px;
+      transition: opacity 0.5s, margin-left 0.5s;
+      opacity: 0;
+    }
+
+    &:hover {
+      img {
+        margin-left: 8px;
+        opacity: 1;
+      }
+    }
+  }
 }
