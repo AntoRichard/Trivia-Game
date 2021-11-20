@@ -1,4 +1,4 @@
-# Getting Started
+# Trivia Game
 
 This project was bootstrapped with [Create React App (TypeScript)](https://github.com/facebook/create-react-app).
 
