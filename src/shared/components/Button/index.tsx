@@ -9,10 +9,10 @@ interface ButtonProps {
 }
 
 const Button: FC<ButtonProps> = (props) => {
-    const { children, className, ...rest } = props;
+    const { children, className,  disabled, ...rest } = props;
 
     return (
-        <span className={`button ${className}`} {...rest}>
+        <span className={`button ${className} ${disabled && "button-disabled"}`} {...rest}>
             {children}
         </span>
     )

@@ -79,11 +79,15 @@ const GameCard: FC<GameCardProps> = (props) => {
             value={answer}
             onChange={(e) => setAnswer(e.target.value)}
           />
-          <Button className="game-card__submit" onClick={handleSubmit}>
+          <Button
+            disabled={!answer}
+            className="game-card__submit"
+            onClick={handleSubmit}
+          >
             Submit
           </Button>
 
-          <p className="result-show"> 
+          <p className="result-show">
             {result === "correct" ? (
               <span>
                 <img src={correct} alt="correct" />
@@ -115,11 +119,11 @@ const GameCard: FC<GameCardProps> = (props) => {
   };
 
   return (
-    <div className="game-card__container">
+    <div className="game-card__container"  data-test-id="game">
       {Array(4)
         .fill("")
         .map((_, index) => (
-          <div className={`game-card-${index} ${getCss(index)}`}>
+          <div data-testid="exam-card" className={`game-card-${index} ${getCss(index)}`} key={index}>
             {index === 0 && CardContent}
           </div>
         ))}

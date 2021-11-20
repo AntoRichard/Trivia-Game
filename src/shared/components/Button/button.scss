@@ -4,11 +4,15 @@
   background: transparent linear-gradient(250deg, #5839cb 0%, #32169b 100%);
   color: white;
   font-weight: bold;
-//   display: inline;
   border-radius: 10px;
   padding: 0.7rem 1.5rem;
   cursor: pointer;
   &:hover {
     background: transparent linear-gradient(250deg, #3f1cbe 0%, #280a94 100%);
   }
+}
+
+.button-disabled {
+  opacity: 0.7;
+  pointer-events: none;
 }

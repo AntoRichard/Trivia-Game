@@ -7,4 +7,29 @@
     display: flex;
     justify-content: center;
     align-items: center;
+
+    .close-container {
+        position: absolute;
+        top: 18px;
+        right: 18px;
+        color: white;
+        font-size: 14px;
+        cursor: pointer;
+        img {
+            height: 12px;
+        }
+        
+        span {
+            transition: opacity 0.5s, margin-left 0.5s;
+            opacity: 0;
+            margin-left: -8px;
+        }
+
+        &:hover {
+            span {
+                opacity: 1;
+                margin-left: 8px;
+            }
+        }
+    }
 }
