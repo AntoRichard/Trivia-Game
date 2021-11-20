@@ -1,11 +1,8 @@
 import { render } from "@testing-library/react";
-import React, { FC } from "react";
 import { unmountComponentAtNode } from "react-dom";
 import { act } from "react-dom/test-utils";
 import { Question } from "../models/Question/question.model";
-import App from "../App";
-import { BrowserRouter, MemoryRouter, Router } from "react-router-dom";
-import Game from "../views/Game";
+import { MemoryRouter } from "react-router-dom";
 import { appRoutes } from "../routes/routeConstants/appRoutes";
 import GameCard from "../shared/components/GameCard";
 
@@ -40,16 +37,16 @@ it("Render question on screen", async () => {
 
   const component = (
     <MemoryRouter initialEntries={[appRoutes.GAME]}>
-      <GameCard question={fakeQuestion} questionNo={1}  loading={false} submitHandler={() => {}} />
+      <GameCard
+        question={fakeQuestion}
+        questionNo={1}
+        loading={false}
+        submitHandler={() => {}}
+      />
     </MemoryRouter>
   );
 
   await act(async () => {
     render(component, container);
   });
-
-  console.log(container.debug());
-  
-
-  console.log(container.querySelector("[data-testid='exam-card']"));
 });

@@ -42,8 +42,6 @@ const GameCard: FC<GameCardProps> = (props) => {
   };
 
   const handleSubmit = () => {
-    // nextQuestion();
-
     if (answer.toLowerCase() === question?.answer?.toLowerCase()) {
       setResult("correct");
     } else {
@@ -66,9 +64,7 @@ const GameCard: FC<GameCardProps> = (props) => {
             <h4>
               Question {questionNo} <span> ({question?.category?.title})</span>
             </h4>
-            <p>
-              <Time />
-            </p>
+            <Time />
           </div>
           <p className="question">{question?.question}</p>
           <Input
@@ -86,7 +82,6 @@ const GameCard: FC<GameCardProps> = (props) => {
           >
             Submit
           </Button>
-
           <p className="result-show">
             {result === "correct" ? (
               <span>
@@ -119,11 +114,15 @@ const GameCard: FC<GameCardProps> = (props) => {
   };
 
   return (
-    <div className="game-card__container"  data-test-id="game">
+    <div className="game-card__container" data-test-id="game">
       {Array(4)
         .fill("")
         .map((_, index) => (
-          <div data-testid="exam-card" className={`game-card-${index} ${getCss(index)}`} key={index}>
+          <div
+            data-testid="exam-card"
+            className={`game-card-${index} ${getCss(index)}`}
+            key={index}
+          >
             {index === 0 && CardContent}
           </div>
         ))}
